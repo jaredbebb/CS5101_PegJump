@@ -8,7 +8,11 @@
 
 #include "PegJump.hpp"
 
+#include <list>
+
 int size = 0;
+
+std::list<int> pegList;
 
 
 //changes the size of the board

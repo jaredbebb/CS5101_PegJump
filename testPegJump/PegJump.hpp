@@ -10,6 +10,7 @@
 #define pegJump_hpp
 
 #include <stdio.h>
+#include <list>
 
 class PegJump{
 public:
@@ -17,6 +18,7 @@ public:
     int myNeighbor;
     
     int changeSize(int newSize);
+    std::list<int> pegList;
     
     PegJump(){};
     ~PegJump(){};

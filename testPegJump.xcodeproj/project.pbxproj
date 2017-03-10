@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7521FB681E725F14004C3A46 /* ExampleTestCase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7521FB661E725F14004C3A46 /* ExampleTestCase.cpp */; };
+		7521FB6B1E733771004C3A46 /* PegController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7521FB691E733771004C3A46 /* PegController.cpp */; };
+		7521FB6E1E7337A7004C3A46 /* PegView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7521FB6C1E7337A7004C3A46 /* PegView.cpp */; };
+		7521FB711E735373004C3A46 /* PegControllerTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7521FB6F1E735373004C3A46 /* PegControllerTester.cpp */; };
 		75C9BB611E6FA85C005654C9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75C9BB601E6FA85C005654C9 /* main.cpp */; };
 		75C9BB691E6FA876005654C9 /* PegJump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75C9BB671E6FA876005654C9 /* PegJump.cpp */; };
 		75C9BB6C1E6FA986005654C9 /* pegJumpTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75C9BB6A1E6FA986005654C9 /* pegJumpTester.cpp */; };
@@ -28,6 +31,12 @@
 /* Begin PBXFileReference section */
 		7521FB661E725F14004C3A46 /* ExampleTestCase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleTestCase.cpp; sourceTree = "<group>"; };
 		7521FB671E725F14004C3A46 /* ExampleTestCase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ExampleTestCase.hpp; sourceTree = "<group>"; };
+		7521FB691E733771004C3A46 /* PegController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PegController.cpp; sourceTree = "<group>"; };
+		7521FB6A1E733771004C3A46 /* PegController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PegController.hpp; sourceTree = "<group>"; };
+		7521FB6C1E7337A7004C3A46 /* PegView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PegView.cpp; sourceTree = "<group>"; };
+		7521FB6D1E7337A7004C3A46 /* PegView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PegView.hpp; sourceTree = "<group>"; };
+		7521FB6F1E735373004C3A46 /* PegControllerTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PegControllerTester.cpp; sourceTree = "<group>"; };
+		7521FB701E735373004C3A46 /* PegControllerTester.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PegControllerTester.hpp; sourceTree = "<group>"; };
 		75C9BB5D1E6FA85C005654C9 /* testPegJump */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testPegJump; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C9BB601E6FA85C005654C9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		75C9BB671E6FA876005654C9 /* PegJump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PegJump.cpp; sourceTree = "<group>"; };
@@ -73,6 +82,12 @@
 				75C9BB6B1E6FA986005654C9 /* pegJumpTester.hpp */,
 				7521FB661E725F14004C3A46 /* ExampleTestCase.cpp */,
 				7521FB671E725F14004C3A46 /* ExampleTestCase.hpp */,
+				7521FB691E733771004C3A46 /* PegController.cpp */,
+				7521FB6A1E733771004C3A46 /* PegController.hpp */,
+				7521FB6C1E7337A7004C3A46 /* PegView.cpp */,
+				7521FB6D1E7337A7004C3A46 /* PegView.hpp */,
+				7521FB6F1E735373004C3A46 /* PegControllerTester.cpp */,
+				7521FB701E735373004C3A46 /* PegControllerTester.hpp */,
 			);
 			name = PegJump;
 			path = testPegJump;
@@ -137,7 +152,10 @@
 				7521FB681E725F14004C3A46 /* ExampleTestCase.cpp in Sources */,
 				75C9BB691E6FA876005654C9 /* PegJump.cpp in Sources */,
 				75C9BB611E6FA85C005654C9 /* main.cpp in Sources */,
+				7521FB711E735373004C3A46 /* PegControllerTester.cpp in Sources */,
+				7521FB6E1E7337A7004C3A46 /* PegView.cpp in Sources */,
 				75C9BB6C1E6FA986005654C9 /* pegJumpTester.cpp in Sources */,
+				7521FB6B1E733771004C3A46 /* PegController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,7 +3,10 @@
 #include <iostream>
 #include "PegJump.hpp"
 #include "pegJumpTester.hpp"
-#include "ExampleTestCase.hpp"
+#include "PegController.hpp"
+#include "PegControllerTester.hpp"
+
+#include <vector>
 
 #include <memory>
 #include <cppunit/extensions/TestFactoryRegistry.h>
@@ -12,7 +15,19 @@
 #include <cppunit/TestCase.h>
 #include <cppunit/extensions/HelperMacros.h>
 
+using namespace std;
+
 int main(int argc, const char * argv[]) {
+
+
+    
+    
+    
+    
+    
+    
+    
+    
     // insert code here...
     std::cout << "Hello, World!\n";
     
@@ -52,6 +67,9 @@ int main(int argc, const char * argv[]) {
     
     // Return error code 1 if any tests failed.
     return wasSucessful ? 0 : 1;
+    
+    
+    
 
     
     

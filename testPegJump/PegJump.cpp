@@ -8,19 +8,31 @@
 
 #include "PegJump.hpp"
 
-#include <list>
+#include <vector>
 
 int size = 0;
+int board = 0;
 
-std::list<int> pegList;
+std::vector<int> pegList = {1,2,3,4,5,6,7,8,9,10};
+
+int tenPegArr[10];
+unsigned long pegListSize = pegList.size();
+
 
 
 //changes the size of the board
 int changeSize(int newSize){
     size = newSize;
     return size;
-    
 }
+
+//add the users specified pegs to the board
+
+
+
+
+
+
 
 
 

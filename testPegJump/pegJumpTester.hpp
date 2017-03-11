@@ -37,6 +37,7 @@ class pegJumpTester : public CppUnit::TestCase
     
     
 public:
+
     
     
     void			setUp ();

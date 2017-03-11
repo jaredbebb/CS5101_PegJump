@@ -19,6 +19,7 @@
 #include <cppunit/extensions/HelperMacros.h>
 
 #include "PegController.hpp"
+#include "PegJump.hpp"
 
 class PegControllerTester : public CppUnit::TestCase
 {
@@ -30,6 +31,7 @@ class PegControllerTester : public CppUnit::TestCase
         PegController controllerBoard;
     
     public:
+
     
         void setUp ();
 };

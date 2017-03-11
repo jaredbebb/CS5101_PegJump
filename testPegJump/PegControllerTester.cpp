@@ -8,6 +8,7 @@
 
 #include "PegControllerTester.hpp"
 #include "PegController.hpp"
+#include "PegJump.hpp"
 
 #include <memory>
 #include <cppunit/extensions/TestFactoryRegistry.h>
@@ -18,9 +19,11 @@
 
 CPPUNIT_TEST_SUITE_NAMED_REGISTRATION( PegControllerTester, "PegControllerTester" );
 
+PegController controllerBoard;
+
+
 void PegControllerTester::setUp ()
 {
-    controllerBoard.addPegs(10);
 }
 
 void PegControllerTester::test2 ()
@@ -28,7 +31,7 @@ void PegControllerTester::test2 ()
     CPPUNIT_ASSERT_EQUAL(1, 1);
 }
 
-CppUnit::Test *suite2()
+CppUnit::Test *suite()
 {
     CppUnit::TestFactoryRegistry &registry =
     CppUnit::TestFactoryRegistry::getRegistry();

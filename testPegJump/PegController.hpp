@@ -15,7 +15,7 @@
 class PegController{
 public:
     PegJump newBoard();
-    PegJump addPegs(int pegNumber);
+    PegJump addPegs();
     
     PegController(){};
     ~PegController(){};

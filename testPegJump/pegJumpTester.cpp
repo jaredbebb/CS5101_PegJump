@@ -22,9 +22,10 @@
 CPPUNIT_TEST_SUITE_NAMED_REGISTRATION( pegJumpTester, "ExampleTestCase" );
 
 
-unsigned long ten;
+unsigned long ten = 0;
 unsigned long currSize;
 unsigned long twenty = 20;
+
 void pegJumpTester::setUp ()
 {
     myBoard.size = 1;
@@ -42,6 +43,8 @@ void pegJumpTester::test1 ()
     
     CPPUNIT_ASSERT_EQUAL((myBoard.size), 1);
     CPPUNIT_ASSERT_EQUAL(myBoard.pegListSize, ten);
+    myBoard.pegList = myBoard.removePeg(5);
+    CPPUNIT_ASSERT_EQUAL(myBoard.size, 9);
 
     
 }

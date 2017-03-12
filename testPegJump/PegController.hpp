@@ -11,11 +11,19 @@
 
 #include <stdio.h>
 #include "PegJump.hpp"
+#include "PegView.cpp";
 
 class PegController{
 public:
+    bool quitApp;
+    bool quitGame;
+    void playGame();
+    PegView boardView;
     PegJump newBoard();
     PegJump addPegs();
+    
+    std::string programTyped;
+    std::string appTyped;
     
     PegController(){};
     ~PegController(){};

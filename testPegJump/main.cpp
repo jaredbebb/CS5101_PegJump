@@ -69,7 +69,8 @@ int main(int argc, const char * argv[]) {
     return wasSucessful ? 0 : 1;
     
     
-    
+    PegController mainController;
+    mainController.playGame();
 
     
     

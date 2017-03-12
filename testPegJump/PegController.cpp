@@ -8,8 +8,13 @@
 
 #include "PegController.hpp"
 #include "PegJump.hpp"
+#include "PegView.hpp"
 
 PegJump newBoard();
+
+void playGame(){
+    
+}
 
 
 

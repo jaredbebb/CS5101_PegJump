@@ -10,5 +10,14 @@
 #define PegView_hpp
 
 #include <stdio.h>
+#include <string>
+
+class PegView{
+    public:
+    std::string whatGame;
+    std::string welcome;
+    std::string helpScreen;
+    std::string end;
+};
 
 #endif /* PegView_hpp */

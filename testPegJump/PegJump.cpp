@@ -17,6 +17,8 @@ std::vector<int> pegList = {1,2,3,4,5,6,7,8,9,10};
 
 unsigned long pegListSize = pegList.size();
 
+int score = 0;
+
 
 //changes the size of the board
 int changeSize(int newSize){
@@ -27,6 +29,10 @@ int changeSize(int newSize){
 std::vector<int> removePeg(int pos){
     pegList = pegList.erase(pos);
     return pegList;
+}
+
+int getScore(){
+    return score;
 }
 
 

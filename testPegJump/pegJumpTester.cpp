@@ -45,6 +45,7 @@ void pegJumpTester::test1 ()
     CPPUNIT_ASSERT_EQUAL(myBoard.pegListSize, ten);
     myBoard.pegList = myBoard.removePeg(5);
     CPPUNIT_ASSERT_EQUAL(myBoard.size, 9);
+    CPPUNIT_ASSERT_EQUAL(myBoard.score, 0);
 
     
 }

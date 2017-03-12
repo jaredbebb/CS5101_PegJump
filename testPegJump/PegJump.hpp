@@ -16,6 +16,7 @@ class PegJump{
 public:
     int size;
     int myNeighbor;
+    int score;
     
     int changeSize(int newSize);
     std::vector<int> pegList;

@@ -25,6 +25,11 @@ unsigned long PegJump::vectorMapSize(){
     return foo.size();
 }
 
+std::vector<int> PegJump::removePeg(int removePeg){
+    foo.erase(foo.begin()+removePeg-1);
+    return foo;
+}
+
 
 
 

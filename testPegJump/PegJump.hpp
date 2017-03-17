@@ -18,6 +18,7 @@ public:
     std::vector<int> foo;
     std::vector<int> createVectorMap(int mapSize);
     unsigned long vectorMapSize();
+    std::vector<int> removePeg(int removePeg);
     
     PegJump(){};
     ~PegJump(){};

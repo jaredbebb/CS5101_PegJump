@@ -9,34 +9,23 @@
 #include "PegJump.hpp"
 
 #include <vector>
+#include <iostream>
+#include <unordered_map>
 
-int size = 0;
-int board = 0;
-
-std::vector<int> pegList = {1,2,3,4,5,6,7,8,9,10};
-
-unsigned long pegListSize = pegList.size();
-
-int score = 0;
-
-
-//changes the size of the board
-int changeSize(int newSize){
-    size = newSize;
-    return size;
+//builds a board with variable size
+std::vector<int> PegJump::createVectorMap(int mapSize){
+    for (int i =1; i <= mapSize; i++) {
+        foo.push_back(mapSize);
+    }
+    return foo;
 }
 
-std::vector<int> removePeg(int pos){
-    pegList = pegList.erase(pos);
-    return pegList;
-}
-
-int getScore(){
-    return score;
+//gets the size of the board
+unsigned long PegJump::vectorMapSize(){
+    return foo.size();
 }
 
 
-//add the users specified pegs to the board
 
 
 

@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "PegJump.hpp"
-#include "PegView.cpp";
+#include "PegView.cpp"
 
 class PegController{
 public:

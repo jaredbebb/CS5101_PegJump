@@ -11,18 +11,13 @@
 
 #include <stdio.h>
 #include <vector>
+#include <unordered_map>
 
 class PegJump{
 public:
-    int size;
-    int myNeighbor;
-    int score;
-    
-    int changeSize(int newSize);
-    std::vector<int> pegList;
-    unsigned long pegListSize;
-    std::vector<int> removePeg(int pos);
-    
+    std::vector<int> foo;
+    std::vector<int> createVectorMap(int mapSize);
+    unsigned long vectorMapSize();
     
     PegJump(){};
     ~PegJump(){};

@@ -21,33 +21,25 @@
 
 CPPUNIT_TEST_SUITE_NAMED_REGISTRATION( pegJumpTester, "ExampleTestCase" );
 
+PegJump zeroPegs;
+PegJump tenPegs;
+unsigned long zero;
+unsigned long ten;
 
-unsigned long ten = 0;
-unsigned long currSize;
-unsigned long twenty = 20;
 
 void pegJumpTester::setUp ()
 {
-    myBoard.size = 1;
-    myBoard.pegList = {1,2,3,4,5,6,7,8,9,10};
-    unsigned long currSize = myBoard.pegListSize;
-    unsigned long ten = 10;
-    unsigned long twenty = 20;
-    
+    zeroPegs.createVectorMap(0);
+    tenPegs.createVectorMap(10);
+    zero = 0;
+    ten = 10;
 }
 
 
 
 void pegJumpTester::test1 ()
 {
-    
-    CPPUNIT_ASSERT_EQUAL((myBoard.size), 1);
-    CPPUNIT_ASSERT_EQUAL(myBoard.pegListSize, ten);
-    myBoard.pegList = myBoard.removePeg(5);
-    CPPUNIT_ASSERT_EQUAL(myBoard.size, 9);
-    CPPUNIT_ASSERT_EQUAL(myBoard.score, 0);
-
-    
+    CPPUNIT_ASSERT_EQUAL(zeroPegs.vectorMapSize(), zero);
 }
 
 

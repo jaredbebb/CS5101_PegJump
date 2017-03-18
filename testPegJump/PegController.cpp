@@ -12,38 +12,41 @@
 #include <iostream>
 #include <string.h>
 
-bool quitApp = false;
-bool quitGame = false;
-PegJump newBoard;
-
-
-
 void PegController::playGame(){
     PegView boardView;
-    quitApp = false;
+    PegJump newBoard;
+    bool quitApp = false;
+    std::string programTyped;
+    std::string appTyped;
     while (quitApp == false) {
         std::string programTyped = NULL;
         std::string appTyped = NULL;
-        std::cout << boardView.home;
+        std::cout << boardView.viewMessage("home");
         std::cin >> programTyped;
+        if(programTyped == "quit"){
+            quitApp = true;
+        }
         if(programTyped == "Peg Jump"){
             int whichPeg = NULL;
-            std::cout << boardView.welcome;
+            std::cout << boardView.viewMessage("welcome");
             int boardsize;
             std::cout << "What size of board do you want, enter in integer format, size 1-100";
             std::cin >> boardsize;
             newBoard.createVectorMap(boardsize);
-            quitGame = false;
+            bool quitGame = false;
             while(quitGame == false){
-                std::cout << boardView.whatAction;
+                std::cout << boardView.viewMessage("whatAction");
                 std::cin >> appTyped;
                 if (appTyped == "Remove") {
-                    std::cout<< boardView.whichPeg;
+                    std::cout<< boardView.viewMessage("whichPeg");
                     std::cin >> whichPeg;
                     newBoard.removePeg(whichPeg);
                 }
                 if (appTyped == "Score") {
                     std::cout << newBoard.vectorMapSize();
+                }
+                if (appTyped == "quit") {
+                    quitGame = true;
                 }
                 
             }

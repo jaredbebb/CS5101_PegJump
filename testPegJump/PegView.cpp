@@ -9,19 +9,33 @@
 #include "PegView.hpp"
 #include <string>
 
-//std::string home = "Home screen";
-//std::string whatGame = "What game would you like to play?";
-//
-//std::string welcome = "Hi, welcome to PegJump";
-//
-//std::string whatAction = "What do you want to do";
-//
-//std::string whichPeg = "Which Peg?";
-//
-//std::string helpScreen = "To start game, type start game\n to find help, type help. If you want to exit, type exit. To get the score, type score.";
-//
-//std::string end = "Thanks for playing";
+std::string PegView::viewMessage(std::string pickMessage)
+{
+    std::string message;
+    if (pickMessage == "home") {
+        message = "Home Screen";
+    }
 
+    if (pickMessage == "whatGame") {
+        message = "What game would you like to play?";
+    }
+    if (pickMessage == "welcome") {
+        message = "Hi, welcome to PegJump";
+    }
+    
+    if (pickMessage == "whatAction") {
+        message = "What do you want to do";
+    }
+    if (pickMessage == "whichPeg") {
+        message = "Which Peg?";
+    }
+    if (pickMessage == "helpScreen") {
+        message = "To start game, type start game\n to find help, type help. If you want to exit, type exit. To get the score, type score.";
+    }
+    if (pickMessage == "end") {
+        message = "Thanks for playing";
+    }
 
-
+    return message;
+}
 

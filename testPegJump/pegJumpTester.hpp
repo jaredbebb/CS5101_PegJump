@@ -28,9 +28,6 @@ class pegJumpTester : public CppUnit::TestCase
     CPPUNIT_TEST( test1 );
     CPPUNIT_TEST_SUITE_END();
     
-    
-    //double m_value1;
-    //double m_value2;
     void test1();
     PegJump myBoard;
 

@@ -14,13 +14,9 @@
 
 class PegView{
     public:
-    std::string home;
-    std::string whatGame;
-    std::string whatAction;
-    std::string whichPeg;
-    std::string welcome;
-    std::string helpScreen;
-    std::string end;
+    
+    std::string viewMessage(std::string pickMessage);
+    
     PegView(){};
     ~PegView(){};
     

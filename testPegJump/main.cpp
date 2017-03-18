@@ -17,12 +17,28 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World..!\n";
+    
+    PegJump thisMap;
+
+    std::cout <<"1.)This map size is:" << thisMap.vectorMapSize() <<std::endl;
+    thisMap.createVectorMap(5);
+    std::cout <<"2.)This map size is:" << thisMap.vectorMapSize() <<std::endl;
     
     PegController mainController;
     mainController.playGame();
+
+
     
+    
+    
+    
+    
+    
+    
+    
+    // insert code here...
+    std::cout << "Hello, World..!\n";
+        
     
     // if command line contains "-selftest" then this is the post build check
     // => the output must be in the compiler error format.

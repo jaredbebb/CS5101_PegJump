@@ -19,7 +19,7 @@ public:
     bool quitGame;
     void playGame();
     PegView boardView;
-    PegJump newBoard();
+    PegJump newBoard;
     PegJump addPegs();
     
     std::string programTyped;

@@ -4,7 +4,6 @@
 #include "PegJump.hpp"
 #include "pegJumpTester.hpp"
 #include "PegController.hpp"
-#include "PegControllerTester.hpp"
 
 #include <vector>
 
@@ -18,28 +17,11 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    
-
-
-
-    
-    
-    
-    
-    
-    
-    
     // insert code here...
     std::cout << "Hello, World..!\n";
     
-//    PegJump* myPeg = new PegJump();
-//    myPeg->myNeighbor = 2;
-//    myPeg->size =5;
-//    
-//    std::cout << "my neightbor is "<< myPeg->myNeighbor << "size is" << myPeg->size<<std::endl;
-    
-//    pegJumpTester* myPegTester = new pegJumpTester();
-//    myPegTester->testShouldFail();
+    PegController mainController;
+    mainController.playGame();
     
     
     // if command line contains "-selftest" then this is the post build check

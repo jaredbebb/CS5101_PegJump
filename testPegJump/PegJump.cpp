@@ -15,7 +15,7 @@
 //builds a board with variable size
 std::vector<int> PegJump::createVectorMap(int mapSize){
     for (int i =1; i <= mapSize; i++) {
-        foo.push_back(mapSize);
+        foo.push_back(i);
     }
     return foo;
 }

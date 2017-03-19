@@ -18,23 +18,6 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    PegJump thisMap;
-
-    std::cout <<"1.)This map size is:" << thisMap.vectorMapSize() <<std::endl;
-    thisMap.createVectorMap(5);
-    std::cout <<"2.)This map size is:" << thisMap.vectorMapSize() <<std::endl;
-    
-    PegController mainController;
-    mainController.playGame();
-
-
-    
-    
-    
-    
-    
-    
-    
     
     // insert code here...
     std::cout << "Hello, World..!\n";
@@ -65,11 +48,17 @@ int main(int argc, const char * argv[]) {
     
     
     // Return error code 1 if any tests failed.
-    return wasSucessful ? 0 : 1;
+   
+    PegJump thisMap;
     
+    std::cout <<"1.)This map size is:" << thisMap.vectorMapSize() <<std::endl;
+    thisMap.createVectorMap(5);
+    std::cout <<"2.)This map size is:" << thisMap.vectorMapSize() <<std::endl;
     
+    PegController mainController;
+    mainController.playGame();
 
-    
+    return wasSucessful ? 0 : 1; 
     
 
 }

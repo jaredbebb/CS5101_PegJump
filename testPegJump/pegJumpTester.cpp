@@ -47,6 +47,8 @@ void pegJumpTester::test1 ()
     CPPUNIT_ASSERT_EQUAL(zeroPegs.vectorMapSize(), zero);
     CPPUNIT_ASSERT_EQUAL(tenPegs.vectorMapSize(), ten);
     CPPUNIT_ASSERT_EQUAL(elevenPegs.vectorMapSize(), ten);
+    CPPUNIT_ASSERT_EQUAL(10,elevenPegs.foo.at(8));
+    CPPUNIT_ASSERT_EQUAL(11, elevenPegs.foo.at(9));
 }
 
 
